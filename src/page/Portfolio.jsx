@@ -141,7 +141,7 @@ const Portfolio = () => {
           <div className="w-[2px]  bg-gray-200 mx-4"></div>
           <div className="lg:w-[50%] w-[100%]">
             <h1 className="font-medium text-xl pb-5">Popular Stocks</h1>
-            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {companies.map((company, index) => (
                 <div
                   key={index}
@@ -161,11 +161,11 @@ const Portfolio = () => {
             </div>
 
             <h1 className="font-medium text-xl pt-5 pb-5">Your Picks</h1>
-            <div className="grid lg:grid-cols-5 gap-4">
-              {companies.map((company, index) => (
+            <div className="grid lg:grid-cols-4 gap-4">
+              {companies?.map((company, index) => (
                 <div
                   key={index}
-                  className=" rounded-md border border-blue-700 flex items-center justify-between p-1 hover:bg-blue-200 transition-all duration-300 cursor-pointer relative"
+                  className=" rounded-md border  border-blue-700 flex items-center justify-between p-1 hover:bg-blue-200 transition-all duration-300 cursor-pointer relative"
                   data-tip={company.name}
                 >
                   <img

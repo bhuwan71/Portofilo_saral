@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import { FaCheck } from "react-icons/fa6";
+import VideoPlayer from "../Components/Vide";
 const PortfolioLandingPage = () => {
   return (
     <div className="bg-[#e8f5ff]  relative">
@@ -58,7 +60,7 @@ const PortfolioLandingPage = () => {
             Saral Lagani Portfolio
           </h4>
           <div>
-            <div className="absolute lg:top-[12px] hidden  lg:block   rounded-xl  w-full h-full opacity-40 pointer-events-none">
+            <div className="absolute top-6  left-[470px] hidden  lg:block   rounded-xl  w-full h-full opacity-40 pointer-events-none">
               <svg
                 width="65"
                 viewBox="0 0 145 503"
@@ -228,11 +230,12 @@ const PortfolioLandingPage = () => {
               </svg>
             </div>
           </div>
-          <div className="bg-black mt-10 h-[240px]">
+          <div className=" mt-10 h-[240px]">
+            <VideoPlayer />
           </div>
         </div>
         <div className="relative  h-[90vh]  lg:w-[50%]   bg-[#2c2c2c] p-5 rounded-3xl">
-          <div className="absolute hidden lg:block lg:top-[12px] lg:left-[210px] rounded-xl  w-full h-full opacity-40 pointer-events-none">
+          <div className="absolute hidden lg:block lg:top-[12px] lg:left-[210px] rounded-xl  w-full h-full opacity-70 pointer-events-none">
             <svg
               width="115"
               viewBox="0 0 185 249"
@@ -281,8 +284,10 @@ const PortfolioLandingPage = () => {
             </svg>
           </div>
           <div>
-            <h3 className="text-white font-medium text-xl">Yearly Plan</h3>
-            <h3 className="text-white font-medium py-3 text-xl">1999 /Month</h3>
+            <h3 className="text-white font-medium text-2xl">Yearly Plan</h3>
+            <h3 className="text-white font-medium py-3 text-2xl">
+              1999 /Month
+            </h3>
             <button className="bg-[#3081ed] mt-[30px]  w-full text-white  px-20 lg:px-36 rounded-xs py-2">
               Get Started
             </button>
@@ -293,7 +298,7 @@ const PortfolioLandingPage = () => {
               </span>
             </div>
 
-            <ul className="text-white font-medium mt-4">
+            <ul className="text-white flex flex-col gap-[10px] font-medium mt-4">
               <li className="flex items-center gap-2">
                 <FaCheck />
                 Saral Rating
